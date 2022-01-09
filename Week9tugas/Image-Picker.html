@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 - YUDIANSYAH</title>
+</head>
+<body style="background-color: rgb(5, 2, 175);">
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="photo1">anjing</option>
+            <option value="photo2">gajah</option>
+            <option value="photo3">kerbau</option>
+            <option value="photo4">singa</option>
+            <option value="photo5">tikus</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "photo1"){
+           image.src = "anjing.jpeg"
+            alert ("This is a anjing")
+        }else if(img == "photo2"){
+            image.src = "gajah.jpg"
+            alert ("This is a gajah!")
+        }else if(img == "photo3"){
+            image.src = "kerbau.jpg"
+            alert ("This is a kerbau")
+        }else if(img == "photo4"){
+            image.src = "singa.jpg"
+            alert ("This is a singa")
+        }else if(img == "photo5") {
+            image.src = "tikus.jpg"
+            alert("This is a tikus")
+        }    
+    }
+</script>
+
+</body>
+</html>
